@@ -1,7 +1,7 @@
 import { Universe } from "./game-kittools/universe.js";
 import { Player, Platform, Figure} from "./game-kittools/entityFactory.js";
 import { Control } from "./game-kittools/controls.js";
-import { generateFramesMap } from "./game-kittools/generateframesMap.js";
+
 
 // Canvas config
 const canvas = document.getElementById("canvas");
