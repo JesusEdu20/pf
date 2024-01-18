@@ -1,0 +1,15 @@
+:root {
+  /* Color */
+    --primary-color: #0d1328;
+
+    /* Fonts */
+    --primary-font: Poppins;
+    --secondary-font: 'second-font';
+
+   /* Icons */
+    --telegram-icon: url("./assets/icons/tm.png");
+    --whatsapp-icon: url("./assets/icons/wp.png");
+    --linkedin-icon: url("./assets/icons/ld.png");
+    --instagram-icon: url("./assets/icons/im.png");
+  }
+  

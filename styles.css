@@ -1,0 +1,208 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+
+    font-size: 62.5%;
+}
+
+
+
+/* Estilos generales y de contenedores */
+
+.inicio{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    min-width: 320px;
+    max-width: 1440px;
+    min-height: min-content;
+    max-height: 900px;
+    /* color */
+    background-color: var(--primary-color);
+    background-image: url(./assets/bg/bg-landscape/Ocean_6/5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    
+    
+    header{
+        width: 100%;
+        height: 8%;
+        /* border: 1px solid white; */
+        
+    }
+    main{
+        position: relative;
+        width: 100%;
+       /*  border: 1px solid white; */
+        flex-grow: 1;
+        z-index: 2;
+        
+    }
+}
+
+.section-start-gradient{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: rgb(45,142,190);
+    background: radial-gradient(circle, rgba(45,142,190,1) 23%, rgba(13,19,40,0.6138830532212884) 100%);
+}
+
+
+#canvas{
+    display: none;
+    position: absolute;
+    /* width: 100%; */
+    height: 100%; 
+    top: 0;
+   
+    /* background-color: rgb(22, 24, 24); */
+    z-index: 1;
+    min-width: 320px;
+}
+
+/* /////////////////////////////////////////////////// */
+
+
+
+
+/* BARRA DE NAVEGACION : mobile*/
+
+nav{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    .menu-list{
+        display: flex;
+        justify-content: space-around;
+        align-items: end;
+        width: 70%;
+        list-style: none;
+        font-family: Poppins;
+        
+
+       
+        /* background-color: rgb(140, 151, 151); */
+        a{
+            text-decoration: none;
+            /* color: white; */
+            font-size: 1rem;
+            color: white;
+            cursor: pointer;
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+/* ///////////////////////////////////////////////////// */
+/* CONTENIDO DE LA SECCION: mobile */
+
+.content-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0 0;
+    .content-presentation{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-auto-rows: minmax(200px, 1fr);
+        gap: 15px;
+        backdrop-filter: blur(20px);
+        border: 1px solid white;
+        border-radius: 20px;
+    }  
+}
+
+.cell{
+    /* border: 1px solid white; */
+    
+    
+}
+
+.cell__profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; 
+    border-radius: 8px;
+    display: none;
+
+    .profile__img{
+        width: 70px;
+        height: 70px;
+        background-image: url("./jaeger-game-kittools/assets/spritesheets/players/spritesheet-slime.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50px;
+        /* grid-row: span 2; */
+        /* border-radius: 0% 50% 44% 60% / 49% 53% 50% 53% ; */
+        box-shadow: 10px 10px 27px 0px rgba(0,0,0,0.36);
+        -webkit-box-shadow: 10px 10px 27px 0px rgba(0,0,0,0.36);
+        -moz-box-shadow: 10px 10px 27px 0px rgba(0,0,0,0.36);
+
+        border: 3px solid #fff;
+        box-shadow: 0 0 20px #006eff, 0 0 30px #0400ff, 0 0 40px #006eff, 0 0 60px #0011ff;
+
+        
+    }
+    
+}
+
+.cell__text-about-me{
+    display: flex;
+    width: 260px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 1.6rem;
+    text-align: left;
+    line-height: 1.8rem;
+    padding:  0 20px ;
+
+    .cell__profile{
+        display: block;
+    }
+    
+}
+
+.cell__controls{
+    display: none;
+    width: 50%;
+    border-radius: 8% 12% 8% 49% / 8% 10% 12% 46% ;
+    /* background-color: aqua; */
+    /* background-image: url(./assets/design/control-bg.png); */
+    background: rgb(50,133,176);
+    background: radial-gradient(circle, rgba(50,133,176,1) 1%, rgba(45,142,190,1) 58%);
+}
+
+.cell__slime-figure{
+    display: none;
+}
+
